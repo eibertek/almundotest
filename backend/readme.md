@@ -29,9 +29,7 @@ Este punto consiste en armar un API Rest en Node.js (para ahorrar tiempo, como b
   crear tabla hotels 1:30h
 
 3 - Crear dos funciones
-    ``` GET /hotels/pageNumber?/pageSize? ```  1:30h
-     con paginacion, para poder ahorrar memoria
-    ``` GET /hotel/hotelId ```       1h
+    ``` GET /hotels/ ```  
+    ``` GET /hotel/hotelId ```       
 
-Total 4h
 
