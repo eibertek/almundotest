@@ -1,0 +1,32 @@
+{
+    "name": "etk_backend",
+    "version": "1.0.0",
+    "description": "Backend for multiple purposes",
+    "main": "index.js",
+    "author": "Mariano Eiberman",
+    "license": "MIT",
+    "private": true,
+    "scripts": {
+        "dev": "ts-node src/index.ts",
+        "dev-watch":"nodemon --watch 'src/**/*.ts' --ignore 'src/**/*.spec.ts' --exec ts-node src/index.ts",
+        "build":"tsc",
+        "dev-script": "ts-node src/createTableScript.ts",
+        "script": "nodemon dist/createTableScript"
+    },
+    "dependencies": {
+        "@types/express": "^4.17.2",
+        "@types/mongoose": "^5.5.34",
+        "@types/node": "^12.12.21",
+        "express": "^4.17.1",
+        "fs": "^0.0.1-security",
+        "mongoose": "^5.8.1",
+        "net": "^1.0.2",
+        "nodemon": "^2.0.2",
+        "ts-loader": "^6.2.1",
+        "ts-node": "^8.5.4",
+        "typescript": "^3.7.3"
+    },
+    "devDependencies": {
+        "webpack-cli": "^3.3.10"
+    }
+}
