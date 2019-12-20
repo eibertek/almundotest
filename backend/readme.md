@@ -19,17 +19,24 @@ Este punto consiste en armar un API Rest en Node.js (para ahorrar tiempo, como b
     }, ...] 
 }
 ```
+Como correr la Aplicacion:
 
-1 - Tener BD de mongo o Rethink
-2 - crear servicio de creacion de base de datos
-  crear tabla Hotels
-  cambiar la data de la DB en el script
-  llenar con informacion mockeada
-  si existe la tabla hotels, borrarla
-  crear tabla hotels 1:30h
+``` yarn install ```  para instalar los paquetes necesarios
 
-3 - Crear dos funciones
-    ``` GET /hotels/ ```  
-    ``` GET /hotel/hotelId ```       
+``` yarn dev ```  Corre el backend en modo desarrollo (los archivos ts directamente)
+
+``` yarn dev-script ```  Genera la base de datos con los datos mockeados necesarios
+
+``` yarn build ```  Genera la aplicacion para deploy (genra los js necesarios)
+
+``` yarn script ```  corre el script de datos desde los archivos de deploy (JS)
+
+La aplicacion no esta configurara para IOS por que no tengo Mac ni Iphone y no pude hacer las pruebas.
+
+
+Servicios:
+
+ ``` GET /hotels/ ```  Devuelve los hoteles en una version minima (nombre, precio, rating y primer imagen)    
+ ``` GET /hotel/hotelId ```    Devuelve el hotel segun su id. trae todos los datos   
 
 

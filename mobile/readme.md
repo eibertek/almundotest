@@ -19,3 +19,16 @@
     }, ...] 
 }
 ```
+Como correr la Aplicacion:
+
+``` yarn install ```  para instalar los paquetes necesarios
+
+``` yarn android ```  para correr la aplicacion mobile (debes tener un celular en modod desarrolloconectado o un dispositivo virtual)
+
+La aplicacion no esta configurara para IOS por que no tengo Mac ni Iphone y no pude hacer las pruebas.
+
+
+
+
+
+
